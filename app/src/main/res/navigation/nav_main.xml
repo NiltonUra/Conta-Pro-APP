@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.nsolucoes.contaproapp.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_criarContaFragment2"
+            app:destination="@id/criarContaFragment2" />
+        <action
+            android:id="@+id/action_loginFragment_to_receitasDespesasFragment2"
+            app:destination="@id/receitasDespesasFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/criarContaFragment2"
+        android:name="com.nsolucoes.contaproapp.CriarContaFragment"
+        android:label="fragment_criar_conta"
+        tools:layout="@layout/fragment_criar_conta" >
+        <action
+            android:id="@+id/action_criarContaFragment2_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/receitasDespesasFragment2"
+        android:name="com.nsolucoes.contaproapp.ReceitasDespesasFragment"
+        android:label="fragment_receitas_despesas"
+        tools:layout="@layout/fragment_receitas_despesas" >
+        <action
+            android:id="@+id/action_receitasDespesasFragment2_to_addReceitaFragment2"
+            app:destination="@id/addReceitaFragment2" />
+        <action
+            android:id="@+id/action_receitasDespesasFragment2_to_addDespesaFragment"
+            app:destination="@id/addDespesaFragment" />
+        <action
+            android:id="@+id/action_receitasDespesasFragment2_to_resultadoPeriodoFragment"
+            app:destination="@id/resultadoPeriodoFragment" />
+        <action
+            android:id="@+id/action_receitasDespesasFragment2_to_verReceitasDespesasFragment"
+            app:destination="@id/verReceitasDespesasFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addReceitaFragment2"
+        android:name="com.nsolucoes.contaproapp.AddReceitaFragment"
+        android:label="fragment_add_receita"
+        tools:layout="@layout/fragment_add_receita" />
+    <fragment
+        android:id="@+id/addDespesaFragment"
+        android:name="com.nsolucoes.contaproapp.AddDespesaFragment"
+        android:label="fragment_add_despesa"
+        tools:layout="@layout/fragment_add_despesa" />
+    <fragment
+        android:id="@+id/resultadoPeriodoFragment"
+        android:name="com.nsolucoes.contaproapp.ResultadoPeriodoFragment"
+        android:label="fragment_resultado_periodo"
+        tools:layout="@layout/fragment_resultado_periodo" />
+    <fragment
+        android:id="@+id/verReceitasDespesasFragment"
+        android:name="com.nsolucoes.contaproapp.VerReceitasDespesasFragment"
+        android:label="fragment_ver_receitas_despesas"
+        tools:layout="@layout/fragment_ver_receitas_despesas" />
+</navigation>
