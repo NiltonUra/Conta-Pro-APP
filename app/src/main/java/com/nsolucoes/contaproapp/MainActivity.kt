@@ -2,6 +2,7 @@ package com.nsolucoes.contaproapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.compose.runtime.mutableStateOf
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import androidx.navigation.ui.NavigationUI.setupWithNavController
@@ -11,7 +12,11 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
     private lateinit var navController: NavController
-    val isDark 
+    val isDark = mutableStateOf(false)
+
+    fun toggleLightTheme(){
+        isDark.value = !isDark.value
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

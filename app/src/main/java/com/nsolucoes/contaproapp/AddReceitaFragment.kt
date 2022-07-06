@@ -11,7 +11,7 @@ import com.nsolucoes.contaproapp.tema.AppTheme
 class AddReceitaFragment : Fragment() {
 
     //private val mainViewModel: MainViewModel by activityViewModels()
-
+@Inject
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
