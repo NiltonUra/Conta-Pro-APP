@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/verReceitasDespesasFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Inicio" />
+    <item
+        android:id="@+id/addReceitaFragment2"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_photo_camera_24"
+        android:title="Add Receita e Despesas" />
+    <item
+        android:id="@+id/resultadoPeriodoFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_grading_24"
+        android:title="Resul Por Periodo" />
+    <item
+        android:id="@+id/verReceitaDespesasFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_content_paste_search_24"
+        android:title="Ver Receita e Despesas" />
+    <item
+        android:id="@+id/criarContaFragment2"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_person_pin_24"
+        android:title="Perfil" />
+
+</menu>
